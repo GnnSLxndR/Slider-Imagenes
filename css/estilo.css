@@ -2,59 +2,59 @@
 	background-color: yellow;
 }
 body{
-	width: 100%;
-	margin:0;
-	font-family: 'Shadows Into Light Two', cursive;
 	background-image:url('../img/bg_body.png');
 	background-repeat: repeat;
+	font-family: 'Shadows Into Light Two', cursive;
+	margin:0;
+	width: 100%;
 }
 h1{
-	margin: 0 auto;
 	background: #222;
 	color:white;
-	width: 300px;
+	margin-bottom: 5px;
+	margin: 0 auto;
 	padding: 5px;
 	text-align: center;
 	text-shadow:0px 1px 1px rgba(255,255,255,0.5),
 				0px 2px 1px rgba(255,255,255,0.5),
 				0px 3px 1px rgba(255,255,255,0.5);
-	margin-bottom: 5px;
+	width: 300px;
 }
 h2{
-	margin: 0 auto;
 	background: #222;
 	color:white;
-	width: 150px;
+	margin-bottom: 10px;
+	margin: 0 auto;
 	padding: 5px;
 	text-align: center;
+	width: 150px;	
 	text-shadow:0px 1px 1px yellow,
 				0px 2px 2px blue,
 				0px 3px 3px red;
-	margin-bottom: 10px;
 }
 div#wrapper{
-	position: relative;
-	width:900px;
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
 	height:450px;
 	margin: 0 auto;
-	box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+	position: relative;
+	width:900px;
 }
 div.slider{
-	position: relative;	
-	width:100%;
 	height:450px;
 	overflow: hidden;
+	position: relative;	
+	width:100%;
 }
     /* navegacion mas sencilla :D
     #left, #right{
-    	position: absolute;
-		height: 60px;
-		width: 58px;
-		margin-top: 180px;
-		z-index: 99;
-		padding: 5px;
 		cursor: pointer;
+		height: 60px;
+		margin-top: 180px;
 		opacity:0.3;
+		padding: 5px;
+		width: 58px;
+		z-index: 99;
+    	position: absolute;
 	}
 	#left{
 		background:url('img/left1.png');
@@ -77,62 +77,62 @@ div.slider{
 	/*background-image: url('img/left1.png');*/
 	background-image: url('../img/arrow_left_2.png');
 	background-size: 100% 100%;
-	height: 80px;
-	width: 80px;
 	border-radius: 0 10px 10px 0;
-	position: absolute;
-	left:-20px;
-	z-index: 40;
 	box-shadow: 4px 3px 6px rgba(0,0,0,0.5);
-	top:200px;
 	cursor: pointer;
+	height: 80px;
+	left:-20px;
 	opacity: 0.4;
+	position: absolute;
+	top:200px;
+	width: 80px;
+	z-index: 40;
 }
 
 .ribbon-edge-bottomleft {
-	position: absolute;
-	z-index: 1;
-	border-style:solid;
-	height:0px;
-	width:0px;
-	top: 80px;
-	left: 0px;
 	border-color: transparent rgba(0,0,0,0.7) transparent transparent;
+	border-style:solid;
 	border-width: 0 20px 10px 0;
+	height:0px;
+	left: 0px;
 	opacity: 0.4;
+	position: absolute;
+	top: 80px;
+	width:0px;
+	z-index: 1;
 } 
 
 /*right ribbon*/
 .ribbon-rigth {
 	/*background-color: #ccf;*/
-	height: 80px;
 	/*background-image: url('img/right1.png');*/
 	background-image: url('../img/arrow_right_2.png');
 	background-size: 100% 100%;
-	width: 80px;
 	border-radius: 10px 0 0 10px;
+	box-shadow: -4px 3px 6px rgba(0,0,0,0.5);
+	cursor: pointer;
+	height: 80px;
+	opacity: 0.4;
 	position: absolute;
 	right:-20px;
-	z-index: 40;
 	top:200px;
-	box-shadow: -4px 3px 6px rgba(0,0,0,0.5);
-	opacity: 0.4;
-	cursor: pointer;
+	width: 80px;
+	z-index: 40;
 }
 
 
 
 .ribbon-edge-bottomright {
-	position: absolute;
-	z-index: 1;
-	border-style:solid;
-	height:0px;
-	width:0px;
-	top: 80px;
-	right: 0px;
 	border-color: transparent transparent transparent rgba(0,0,0,0.7);
+	border-style:solid;
 	border-width: 0 0 10px 20px;
+	height:0px;
 	opacity: 0.4;
+	position: absolute;
+	right: 0px;
+	top: 80px;
+	width:0px;
+	z-index: 1;
 }
 
 div#wrapper:hover .ribbon-edge-bottomright, div#wrapper:hover .ribbon-rigth,
@@ -142,22 +142,22 @@ opacity: 1;
 
 /*fin del ribbon*/
 div.slider ul{
-	position: relative;
-	list-style: none;
-	width: 100%;
 	height: 100%;
-	padding:0px;
-	margin-top: 0px;
+	list-style: none;
 	margin-bottom:0px;
+	margin-top: 0px;
+	padding:0px;
+	position: relative;
+	width: 100%;
 }
 div.slider ul li{
+	height: 100%;
+	left: 0;
 	position: absolute;
 	top: 0;
-	left: 0;
 	width: 100%;
-	height: 100%;
 }
 div.slider ul li img{
-	width: 100%;
 	height: 100%;
+	width: 100%;
 }

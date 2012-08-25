@@ -33,11 +33,11 @@
     		obj = this;
 
     		$(this.config.siguiente).on('click',function(){
-    			obj.siguiente(obj.slide.present);
+    			obj.siguiente();
     		});
 
     		$(this.config.anterior).on('click',function(){
-    			obj.anterior(obj.slide.present);
+    			obj.anterior();
     		});
     	},
     	cambioPosicion: function(slide, sentido){
@@ -71,8 +71,9 @@
   					} 	
   				);
     	},
-    	siguiente : function(slide){
+    	siguiente : function(){
     		sentido ="-";
+            slide = this.slide.present;
     		if(!this.slide.move){
     			this.animar(slide,sentido);
     			var nuevoSlide =this.cambioPosicion(slide, sentido);
@@ -80,8 +81,9 @@
     		}
     	},
 
-    	anterior : function(slide){
+    	anterior : function(){
     		sentido ="+";
+            slide = this.slide.present;
     		if(!this.slide.move){
     			this.animar(slide,sentido);
     			var nuevoSlide =this.cambioPosicion(slide,sentido);
