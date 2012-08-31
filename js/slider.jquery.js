@@ -30,7 +30,26 @@
             
             this.$lista.hide();
             this.$lista.eq(this.config.slideActual).show();
-    		obj = this;
+            obj = this;
+
+             this.$lista.each(function(index,elemento){
+                //obj.titulo(index);
+                 var item = obj.$lista.eq(index);
+          
+                 var span =document.createElement('span');
+               var h1 = document.createElement('h1');
+               h1.innerHTML = item.find('img').attr('title');
+               var p = document.createElement('p');
+               p.innerHTML = item.find('img').attr('alt');
+               $(span).addClass('descripcionImg')
+                    .append(h1)
+                    .append(p);
+               item.append(span);
+            item.find('span').slideToggle();
+            });
+
+           
+            this.$lista.eq(this.config.slideActual).find('span').slideToggle();
 
     		$(this.config.siguiente).on('click',function(){
     			obj.siguiente();
@@ -68,6 +87,7 @@
   					function (){
   						obj.slide.present = slide;
   						obj.slide.move = false;
+  						 obj.$lista.eq(slide).find('span').slideToggle();
   					} 	
   				);
     	},
