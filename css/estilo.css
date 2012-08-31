@@ -161,3 +161,22 @@ div.slider ul li img{
 	height: 100%;
 	width: 100%;
 }
+div.slider ul li .descripcionImg{
+	position: absolute;
+	z-index: 4;
+	bottom: 0px;
+	left: 0px;
+	
+}
+div.slider ul li .descripcionImg h1{
+	padding: 10px;
+	color: white;
+	background: #222;
+	width: 150px;
+}
+div.slider ul li .descripcionImg p{
+	margin-top:-10px;
+	padding: 5px;
+	color: #222;
+	background: white;
+}
